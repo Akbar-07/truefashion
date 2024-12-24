@@ -1,0 +1,288 @@
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+  @import url("https://use.typekit.net/mml3kjb.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--body-color)
+}
+
+
+
+/* --- Colors --- */
+
+:root {
+    --main: #8cd0e3;
+    --main-light: #f3f8fe;
+    --main-dark: #e8d300;
+    --main-third:#e2f9ff;
+    --body-color: #212529;
+    --cta-green: #000000;
+    --cta-green-dark: #06AA98;
+    --grey: #ced4da;
+    --grey-dark: #000000;
+    --grey-light: #f8f9fa;
+}
+
+.border{
+    border:1px solid var(--main-light)!important;
+}
+
+/* --- Override --- */
+.text-success {
+    color: var(--cta-green) !important;
+}
+
+/* --- Buttons --- */
+
+.btn, .btn-main, .btn-sec-dark, .btn-ter-dark, .btn-main-dark, .btn-main-light {
+    border-radius: 5px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-main {
+    font-weight: 600;
+    background-color: var(--main);
+}
+
+.btn-main:hover {
+    background-color: var(--main-dark);
+    filter: brightness(0.95);
+}
+
+.btn-sec-dark {
+    color: var(--main-dark);
+    background-color: transparent;
+    padding: .7rem 1.5rem;
+}
+
+.btn-sec-dark:hover {
+    background-color: var(--main-dark);
+    color: white
+}
+
+.btn-sec-dark:focus {
+    background-color: var(--main-dark);
+    color: white;
+    filter: brightness(0.85);
+}
+
+.btn-main-light {
+    color: var(--main);
+    border: none;
+    background-color: white;
+    padding: .7rem 1.5rem;
+}
+
+.btn-main-light:hover {
+    color: var(--main-dark);
+}
+
+.btn-ter-dark, .btn-main-dark {
+    color: white;
+    border: none;
+    background-color: var(--main);
+    padding: .7rem 1.5rem;
+}
+
+.btn-ter-dark:hover, .btn-main-dark:hover {
+    background-color: var(--main-dark);
+}
+
+.btn-mini {
+    padding: .4rem 1rem
+}
+
+.btn-add-to-cart-sm,
+.btn-submit {
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--cta-green);
+}
+
+.btn-submit {
+    border: none;
+    padding: .7rem 1.5rem;
+}
+
+.btn-add-to-cart {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    padding: 1rem 3rem;
+}
+
+.btn-add-to-cart:hover,
+.btn-add-to-cart-sm:hover,
+.btn-submit:hover:not([disabled="disabled"]):not([disabled]) {
+    color:white;
+    background-color: var(--cta-green-dark);
+}
+
+.btn-add-to-cart:disabled,
+.btn-add-to-cart-sm:disabled,
+.btn-submit:disabled {
+    opacity:0.7;
+    cursor: default;
+}
+
+.overlay-text > .bg-dark {
+    border-radius:8px;
+}
+
+/* --- Other --- */
+
+.bg-primary{
+    background-color:var(--main)!important;
+}
+
+.bg-secundary{
+    background-color:var(--main-light)!important;
+}
+.hover-white:hover{
+    background-color:white!important;
+}
+.bg-tertiary {
+    background-color: var(--main-third);    
+}
+
+.rounded {
+    border-radius: 25px !important;
+}
+
+.main-form > input,
+.main-form > textarea,
+.login-form select,
+.login-form input {
+    border-color: #707070;
+    border-radius: 8px;
+}
+
+.main-form > input,
+.login-form input {
+    padding: 30px 25px;
+}
+
+.login-form select {
+    padding: 10px 21px;
+    height: 62px;
+}
+
+.main-form > textarea {
+    padding: 20px 25px; 
+}
+
+/* --- Cards --- */
+
+.img-card {
+    overflow: hidden;
+    border-radius:8px;
+}
+
+.column-img {
+    background-size: cover;
+    height: 100%;
+}
+
+
+ .block{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      font-size: 16px;
+    }
+    .block h2{
+      position: relative;
+      display: block;
+      text-align: center;
+      margin: 0;
+      top: 50%;
+      transform: translateY(50%);
+      font-size: 10vw;
+      color: white;
+      font-weight: 400;
+    }
+    
+    .block div{
+      position: relative;
+      display: block;
+      text-align: center;
+      margin: 0;
+      top: 50%;
+      transform: translateY(350%);
+      color: white;
+      font-weight: 400;
+    }
+    .img-parallax {
+      width: 100vmax;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,0);
+      pointer-events: none
+    }
+    
+      .hiw-icon{
+        font-size:30px;
+        margin: 0 auto;
+        height:60px;
+        width:60px;
+        padding: 15px 0;
+        line-height: 30px;
+    }
+
+/* --- Front-page --- */
+
+header.main-page {
+  
+}
+/*-- Container --*/
+@media (min-width: 2000px){
+.container {
+    max-width: 70%;
+}
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 1400px!important;
+}
+}
+@media (max-width: 575.98px) {
+    .container {
+        min-width: 100%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .scrollable-menu {
+        height: auto;
+        max-height: 400px;
+        overflow-x: hidden;
+    }
+}
+.cop-1{
+   margin-top:0px!important;
+   background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../image/deals.jpg');
+    background-size:cover;
+     background-repeat:no-repeat;
+     background-position:center;
+     height:40vh;
+}
